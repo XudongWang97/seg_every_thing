@@ -12,7 +12,7 @@ MODEL:
   FASTER_RCNN: true
   MASK_ON: true
   NUM_CLASSES: 3007
-  TYPE: mask_rcnn
+  TYPE: generalized_rcnn
 MRCNN:
   BBOX2MASK:
     BBOX2MASK_ON: true

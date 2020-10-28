@@ -6,3 +6,9 @@ setuptools
 Cython
 mock
 scipy
+future
+hypothesis
+protobuf
+graphviz
+tornado
+six
