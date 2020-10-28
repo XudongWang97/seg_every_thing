@@ -1,0 +1,8 @@
+numpy
+pyyaml
+matplotlib
+opencv-python
+setuptools
+Cython
+mock
+scipy
