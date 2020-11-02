@@ -22,13 +22,17 @@ spec:
       - kind: WORKDIR
         value: /opt/nuclio
       - kind: RUN
+        value: apt update
+      - kind: RUN
         value: git clone https://github.com/XudongWang97/seg_every_thing.git seg_every_thing
       - kind: WORKDIR
         value: /opt/nuclio/seg_every_thing
       - kind: RUN
-        value: apt update
-      - kind: RUN
         value: pip install -r requirements.txt
+      - kind: RUN
+        value: mkdir models && cd models
+      - kind: RUN
+        value: wget https://github.com/XudongWang97/seg_every_thing/releases/download/v0.1/model_hardhat.pkl
       - kind: WORKDIR
         value: /opt/nuclio
       - kind: RUN
